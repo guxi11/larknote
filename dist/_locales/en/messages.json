@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Larknote",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+      "message": "A chrome extension which can enhance the feishu documents’ ability to take notes.",
+      "description": "The description of the application, displayed in the web store."
+  }
+}
