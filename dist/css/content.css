@@ -1,0 +1,4 @@
+/* show nav bar in doc iframe */
+.iframe-mode .navigation-bar-wrapper {
+  display: block;
+}

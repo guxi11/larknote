@@ -6,9 +6,7 @@ const unvisitableLinks = new UnvisitableLinks();
 
 // Auto link
 function autoUpdateLinkText () {
-  if (location.href.indexOf('docs') >= 0) {
-    bindLinkModifyListener();
-  }
+  bindLinkModifyListener();
 }
 
 function bindLinkModifyListener () {

@@ -8,6 +8,7 @@ module.exports = {
     content: './src/scripts/content.ts',
     background: './src/scripts/background.ts',
     popup: './src/pages/popup.tsx',
+    autolink: './src/scripts/autolink.ts',
   },
 
   output: {
