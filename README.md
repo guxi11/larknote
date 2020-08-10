@@ -5,8 +5,8 @@ A chrome extension which can enhance the [feishu documents](https://www.feishu.c
 ## Features
 
 - [x] Autocomplete link title
-- [ ] Ability to keep sidebars on document pages, like Octotree
-- [ ] Automatically add back links, like Roam
+- [ ] Ability to keep sidebars on document pages
+- [ ] Automatically add back links
 
 ## Development
 
@@ -34,8 +34,8 @@ Use `npx webpack` to recompile after editing.
 
 ## TODO
 
+- [x] Add options popup
 - [ ] Add hot reloading
-- [ ] Add options page
 
 ## Contributing
 

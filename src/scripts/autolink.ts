@@ -4,8 +4,10 @@ import UnvisitableLinks from './UnvisitableLinks';
 
 const unvisitableLinks = new UnvisitableLinks();
 
+let linkObserver;
+
 // Auto link
-function autoUpdateLinkText () {
+function autoCompleteLinkText () {
   bindLinkModifyListener();
 }
 
@@ -19,13 +21,17 @@ function bindLinkModifyListener () {
   }
 
   // The mutation observer
-  let ob = new MutationObserver(() => {
+  linkObserver = new MutationObserver(() => {
     updateLinkText(linkModifyPopup);
   });
-  ob.observe(linkModifyPopup, {
+  linkObserver.observe(linkModifyPopup, {
     attributes: true,
     attributeFilter: ["class"]
   });
+}
+
+function removeAutoCompleteLinkText () {
+  linkObserver.disconnect();
 }
 
 // Get link text
@@ -101,4 +107,7 @@ function getPageTitleByUrl (url: string): Promise<string> {
   })
 }
 
-export default autoUpdateLinkText;
+export {
+  autoCompleteLinkText,
+  removeAutoCompleteLinkText,
+};

@@ -1,6 +1,6 @@
 {
   "name": "Larknote",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "A chrome extension which can enhance the feishu documents’ ability to take notes.",
   "homepage_url": "https://github.com/guxi11/larknote",
@@ -22,6 +22,7 @@
     "persistent": true
   },
   "permissions": [
+    "storage",
     "http://*/*",
     "https://*/*"
   ],
