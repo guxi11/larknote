@@ -1,6 +1,7 @@
 const path = require('path');
+const ChromeExtensionReloader  = require('webpack-chrome-extension-reloader');
 
-module.exports = {
+const config = {
   mode: "development",
   devtool: "inline-source-map",
 
@@ -26,4 +27,18 @@ module.exports = {
       { test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
   },
+
+  plugins: [],
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode) {
+    config.mode = argv.mode;
+  }
+  if (argv.mode === 'development') {
+    config.plugins.push(
+      new ChromeExtensionReloader(),
+    );
+  }
+  return config;
 };
