@@ -2,11 +2,9 @@
   "name": "larknote",
   "version": "1.0.0",
   "description": "A chrome extension which can enhance the feishu documents’ ability to take notes.",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development --watch"
   },
   "keywords": [],
   "author": "",
